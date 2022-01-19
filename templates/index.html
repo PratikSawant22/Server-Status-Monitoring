@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Server Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <div>
+      <h1 style="color:white">Server Status Monitoring</h1>
+      <form method="post">
+        <div>
+          <label class="index_lable">Public IP Address</label>
+          <input class="index1" placeholder="Public IP Address" type="text" name="ip_address">
+          <label class="index_lable">Username</label>
+          <input class="index1" placeholder="Username" type="text" name="username">
+          <label class="index_lable">Password</label>
+          <input class="index1" placeholder="Password" type="password" name="password">
+          <input class="custom-btn btn-6 index_btn" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<html>

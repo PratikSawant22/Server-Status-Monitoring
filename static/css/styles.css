@@ -1,0 +1,194 @@
+.terminal_header {
+	text-align: center
+}
+
+.container {
+	text-align: center
+}
+
+
+/* demo*/
+
+.index1 {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 1.5rem;
+	background-color: #222222;
+}
+
+.custom-btn {
+	width: 130px;
+	height: 40px;
+	padding: 5px 5px 5px 5px;
+	border: 2px solid #000;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+
+/* 6 */
+
+.btn-6 {
+	background: #000;
+	color: #fff;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+
+.btn-6 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.btn-6:before,
+.btn-6:after {
+	position: absolute;
+	content: "";
+	height: 0%;
+	width: 2px;
+	background: #000;
+}
+
+.btn-6:before {
+	right: 0;
+	top: 0;
+	transition: all 500ms ease;
+}
+
+.btn-6:after {
+	left: 0;
+	bottom: 0;
+	transition: all 500ms ease;
+}
+
+.btn-6:hover {
+	color: #000;
+	background: transparent;
+}
+
+.btn-6:hover:before {
+	transition: all 500ms ease;
+	height: 100%;
+}
+
+.btn-6:hover:after {
+	transition: all 500ms ease;
+	height: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+	position: absolute;
+	content: "";
+	background: #000;
+}
+
+.btn-6 span:before {
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 2px;
+	transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+	right: 0;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+	width: 100%;
+}
+
+.btn-6 span:hover:after {
+	width: 100%;
+}
+
+.effect-1,
+.effect-2,
+.effect-3 {
+	border: 0;
+	padding: 7px 2px 2px 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.effect-2~.focus-border {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background-color: #4caf50;
+	transition: 0.4s;
+}
+
+.effect-2:focus~.focus-border {
+	width: 100%;
+	transition: 0.4s;
+	left: 0;
+}
+
+.col-3 {
+	float: left;
+	width: 27.33%;
+	margin: 10px 2%;
+	position: relative;
+}
+
+
+/* necessary to give position: relative to parent. */
+
+input[type="text"] {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+
+input[type="password"] {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #333;
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+
+.index_lable {
+	font-size: 15px;
+	color: white;
+}
+
+.index_btn {
+	width: 200px;
+	left: 500px;
+}
+
+#logout {
+	top: 100%;
+}

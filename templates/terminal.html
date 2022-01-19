@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Server Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <a id="logout" href="{{ url_for('index') }}">log out</a>
+    <h1 style="color:white">Server Status Monitoring</h1>
+    <p style="color:green">SSH Client is connected to the remote server {{ip}}...Enter the command to access server.</p>
+    <div class="col-3">
+      <form method="post">
+        <input class="effect-2" placeholder="Enter The Command" type="text" name="command">
+        <span class="focus-border"></span>
+    </div>
+    <input class="custom-btn btn-6" type="submit" value="Execute">
+    </form>
+    <div> {% if result != None and flag == 0 %} {% for line in result %} <div>
+        <p style="color:blue"> {{line}} </p>
+      </div> {% endfor %} {% else %} {% for e in result %} <p style="color:red">{{e}}</p> {% endfor %} {% endif %} </div>
+  </body>
+</html>
+<html>
